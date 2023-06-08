@@ -17,7 +17,7 @@ namespace WorkerService
                 while (!stoppingToken.IsCancellationRequested)
                 {                    
                     string userprofile = Environment.GetEnvironmentVariable("USERPROFILE");
-                    _logger.LogWarning("UserProfile:{UserProfile} }", userprofile );
+                    _logger.LogWarning("UserProfile:{UserProfile}", userprofile );
 
                     await Task.Delay(TimeSpan.FromMinutes(1), stoppingToken);
                 }
