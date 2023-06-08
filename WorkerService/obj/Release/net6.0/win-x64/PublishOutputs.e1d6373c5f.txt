@@ -1,0 +1,4 @@
+C:\Users\fredd\source\repos\WorkerService\WorkerService\bin\Release\net6.0\win-x64\publish\appsettings.Development.json
+C:\Users\fredd\source\repos\WorkerService\WorkerService\bin\Release\net6.0\win-x64\publish\appsettings.json
+C:\Users\fredd\source\repos\WorkerService\WorkerService\bin\Release\net6.0\win-x64\publish\WorkerService.pdb
+C:\Users\fredd\source\repos\WorkerService\WorkerService\bin\Release\net6.0\win-x64\publish\WorkerService.exe
