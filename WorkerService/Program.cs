@@ -7,9 +7,16 @@ IHost host = Host.CreateDefaultBuilder(args)
         {
             options.ServiceName = ".NET Joke Service";
         })
+        .ConfigureLogging((hostBuilderContext, logging) =>
+        {
+            logging.AddConsole();
+            logging.AddFileLogger(options =>
+            {
+                hostBuilderContext.Configuration.GetSection("Logging").GetSection("FileLogger").GetSection("Options").Bind(options);
+            });
+        })
     .ConfigureServices((context, services) =>
-    {
-        LoggerProviderOptions.RegisterProviderOptions<EventLogSettings, EventLogLoggerProvider>(services);
+    {       
         services.AddSingleton<JokeService>();
         services.AddHostedService<WindowsBackgroundService>();
 
