@@ -1,0 +1,4 @@
+C:\JokeService\appsettings.Development.json
+C:\JokeService\appsettings.json
+C:\JokeService\WorkerService.pdb
+C:\JokeService\WorkerService.exe
